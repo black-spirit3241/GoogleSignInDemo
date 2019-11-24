@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:padding="@dimen/margin_medium_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/button_height"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/login"
+            android:src="@drawable/ic_favorite"
+            android:layout_centerInParent="true"
+            android:layout_above="@id/infoLayout"
+            />
+
+        <LinearLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_3">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_hint"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:passwordToggleEnabled="true">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_hint"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvForgetPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forget_password"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin_medium"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/login"
+                android:gravity="center"
+                android:textSize="@dimen/text_regular_2x"
+                android:textColor="@color/iconTextColor"
+                android:textAllCaps="true"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                app:cornerRadius="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" OR CONNECT WITH"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_regular_3x"
+                android:layout_marginTop="@dimen/margin_medium_2"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/infoLayout">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFacebookLogin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/button_height"
+                android:text="facebook"
+                android:gravity="center"
+                android:textSize="@dimen/text_regular_2x"
+                android:textColor="@color/iconTextColor"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/blue_color"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                app:cornerRadius="20dp"
+                android:layout_margin="@dimen/margin_medium"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGoogleSignin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/button_height"
+                android:text="google"
+                android:gravity="center"
+                android:textSize="@dimen/text_regular_2x"
+                android:textColor="@color/iconTextColor"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/red_color"
+                android:layout_marginTop="@dimen/margin_medium_3"
+                app:cornerRadius="20dp"
+                android:layout_margin="@dimen/margin_medium"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

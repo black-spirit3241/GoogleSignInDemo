@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "656128192380",
+    "firebase_url": "https://signinassignment.firebaseio.com",
+    "project_id": "signinassignment",
+    "storage_bucket": "signinassignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656128192380:android:85a497a428c6c90472bef9",
+        "android_client_info": {
+          "package_name": "com.padc.googlesignindemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656128192380-l983frlsb0ldv69egqrup6t3evr0ndj6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.padc.googlesignindemo",
+            "certificate_hash": "ef786e8acaf7afe30a571ca41c54de570dc631b2"
+          }
+        },
+        {
+          "client_id": "656128192380-8glunpleklmjqi52hol0j9v2vd4p0539.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR_PYFJweAqXPvz4Og2QarCKDbGRskTck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656128192380-8glunpleklmjqi52hol0j9v2vd4p0539.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

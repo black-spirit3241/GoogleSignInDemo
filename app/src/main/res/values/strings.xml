@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GoogleSignInDemo</string>
+
+
+    <string name="login">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+
+    <string name="forget_password">Forget Password?</string>
+
+    <string name="facebook_app_id">558842628237229</string>
+    <string name="fb_login_protocol_scheme">fb558842628237229</string>
+
+
+</resources>
